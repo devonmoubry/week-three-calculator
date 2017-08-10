@@ -16,6 +16,9 @@ buttons.forEach(function(button) {
     if (outputScreen.textContent.length < maximumLength) {
       outputScreen.textContent += buttonValue;
     } // if
+    if (outputScreen.textContent.length === maximumLength) {
+      alert('Oh, no! Too many maths!');
+    }
   }) // button.eventListener()
 }); // buttons.forEach()
 
